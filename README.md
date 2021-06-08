@@ -4,17 +4,17 @@
 ### Attributes
 | Tag | Type | Description |
 | ------------- | ------------- | ----- |
-| `buoy_id` | `string` | Unique identifier for this buoy **(Required)** |
+| `buoy_id` | `integer` | Unique identifier for this buoy **(Required)** |
 | `label` | `string` | Label for internal use I.e. 'PortHeadland #32' **(Required)** |
 | `web_display_label` | `string` | Label for pretty title for the buoy I.e. 'Port Headland Deap Sea' **(Required)** |
-| `type` | `string` | Buoy manufacturer **(Required)** |
+| `type` | `string` | Buoy manufacturer |
 | `enabled` | `integer` | `0` not visible, `1` visible, `2` map only, `3` chart only  **(Required)** |
-| `order` | `integer` | Order in list on website **(Required)** |
+| `order` | `integer` | Order of appearance in buoys list on website **(Required)** |
 | `data` | `string` | Area to place additional data for later reference or use |
 | `start_date` |  `timestamp` | Date buoy was deployed **(Required)** |
 | `end_date` |  `timestamp` | Date buoy was retired |
-| `first_updated` | `timestamp` | Filename for first CSV written |
-| `last_updated` | `timestamp` | Filename for most recently written CSV |
+| `first_updated` | `timestamp` | Date first wave data was written **(Required)** |
+| `last_updated` | `timestamp` | Date most recent update was made **(Required)** |
 | `drifting` | `boolean` | If the buoy is drifiting **(Required)** |
 | `latitude` | `float` | Launch latitude |
 | `longitude` | `float` | Launch longitude |
@@ -26,7 +26,7 @@
 | Tag | Type | Description |
 | ------------- | ------------- | ----- |
 | `wave_id` | `integer` | Unique id for this wave event **(Required)** | 
-| `buoy_id` | `string` | `buoy_id` this event data is linked to **(Required)** | 
+| `buoy_id` | `integer` | `buoy_id` this event data is linked to **(Required)** | 
 | `timestamp` | `timestamp` | Unix timestamp UTC for this wave event **(Required)** | 
 | `timestamp_reference` | `string` | Human readable UTC datetime in the industry standard format `dd-M-yyyy hh:mm:ss` for example `05-Dec-2001 22:11:40` **(Required)** | 
 | `hsig` | `float` | Significant Wave Height (metres) |
