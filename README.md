@@ -5,7 +5,7 @@
 | Tag | Type | Description |
 | ------------- | ------------- | ----- |
 | `buoy_id` | `integer` | Unique identifier for this buoy **(Required)** |
-| `label` | `string` | Label for internal use I.e. 'PortHeadland #32' **(Required)** |
+| `label` | `string` | Label/Slug for internal use I.e. 'PortHeadland'. No spaces. **(Required)** |
 | `web_display_label` | `string` | Label for pretty title for the buoy I.e. 'Port Headland Deap Sea' **(Required)** |
 | `type` | `string` | Buoy manufacturer |
 | `enabled` | `integer` | `0` not visible, `1` visible, `2` map only, `3` chart only  **(Required)** |
