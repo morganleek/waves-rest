@@ -16,6 +16,9 @@
 | `first_updated` | `timestamp` | Date first wave data was written **(Required)** |
 | `last_updated` | `timestamp` | Date most recent update was made **(Required)** |
 | `drifting` | `boolean` | If the buoy is drifiting **(Required)** |
+| `download_text` | `string` | Licence for downloading data from website **(Required)** |
+| `description` | `string` | Info about the buoy for the website **(Required)** |
+| `image` | `string` | URL to image of the buoy **(Required)** |
 | `latitude` | `float` | Launch latitude |
 | `longitude` | `float` | Launch longitude |
 
